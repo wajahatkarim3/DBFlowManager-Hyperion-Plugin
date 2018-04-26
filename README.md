@@ -50,6 +50,12 @@ public class MyApp extends Application {
 
 ```
 
+Libraries Used
+=============
+* DBFlowManager [https://github.com/wajahatkarim3/DBFlowManager](https://github.com/wajahatkarim3/DBFlowManager)
+* DBFlow [https://github.com/Raizlabs/DBFlow](https://github.com/Raizlabs/DBFlow)
+* Hyperion [https://github.com/willowtreeapps/Hyperion-Android](https://github.com/willowtreeapps/Hyperion-Android)
+
 Donations
 =============
 
