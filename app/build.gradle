@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+
+
 
 android {
     compileSdkVersion 27
@@ -27,7 +28,17 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    implementation project(":dbflowmanager-hyperion-library")
+
+    // DBFlow
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+
+    // Hyperion
+    debugImplementation 'com.willowtreeapps.hyperion:hyperion-core:0.9.20'
+    debugImplementation project(":dbflowmanager-hyperion-library")
+
+    releaseImplementation 'com.willowtreeapps.hyperion:hyperion-core-no-op:0.9.20'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
