@@ -22,6 +22,8 @@ android {
         }
     }
 
+    resourcePrefix 'hdbfmanager_'
+
 }
 
 dependencies {

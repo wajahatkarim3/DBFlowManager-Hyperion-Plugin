@@ -2,6 +2,11 @@
 
 buildscript {
     ext.kotlin_version = '1.2.40'
+
+    ext {
+        dbflow_version = "4.2.3"
+    }
+
     repositories {
         google()
         jcenter()
