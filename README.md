@@ -6,10 +6,11 @@ The Hyperion plugin of DBFlowManager for viewing DBFlow databases in the app.
 Installation
 ============
 
-First, follow the README to set up [DBFlow](https://github.com/Raizlabs/DBFlow). Then, follow the README to set up [Hyperion](https://github.com/willowtreeapps/Hyperion-Android). Then, all you need to do is simply add the dependency of DBFlowManager Hyperion Plugin like this in app's ```build.gradle``` file:
+First, follow the README to set up [DBFlow](https://github.com/Raizlabs/DBFlow). Then, follow the README to set up [Hyperion](https://github.com/willowtreeapps/Hyperion-Android). Then, all you need to do is simply add the dependency of DBFlowManager Hyperion Plugin and DBFlowManager like this in app's ```build.gradle``` file:
 
 ```groovy
 dependencies {
+  implementation 'com.wajahatkarim3.DBFlowManager:DBFlowManager:3.1.1-v1'
   debugImplementation 'com.wajahatkarim3.dbflowmanager-hyperion-library:dbflowmanager-hyperion-library:1.0.0'
 }
 ```
@@ -49,6 +50,12 @@ public class MyApp extends Application {
 }
 
 ```
+
+Troubleshooting
+=====
+If you get any crash about calling ```FlowManager.init()``` like [this issue](https://github.com/Raizlabs/DBFlow/issues/1300), then refer to [this solution](https://github.com/wajahatkarim3/DBFlowManager-Hyperion-Plugin/issues/3). 
+
+The key point here is that if you use kotlin for databases and tables, then use ```kapt``` for DBFlow annotation processings.
 
 Libraries Used
 =============
