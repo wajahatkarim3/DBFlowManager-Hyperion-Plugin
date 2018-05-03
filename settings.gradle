@@ -1,1 +1,1 @@
-include ':app', ':dbflowmanager-hyperion-library'
+include ':app', ':dbflowmanager-hyperion-library', ':dbflowmanager-hyperion-release', ':dbflowmanager-hyperion-library-no-op'

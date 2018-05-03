@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
-apply plugin: 'kotlin-kapt'
 apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
@@ -15,8 +14,8 @@ ext {
     bintrayName = "com.wajahatkarim3.DBFlowManagerHyperionPlugin"
 
     publishedGroupId = 'com.wajahatkarim3.dbflowmanager-hyperion-library'
-    libraryName = 'dbflowmanager-hyperion-library'
-    artifact = 'dbflowmanager-hyperion-library'
+    libraryName = 'dbflowmanager-hyperion-no-op'
+    artifact = 'dbflowmanager-hyperion-no-op'
 
     libraryDescription = 'The Hyperion plugin of DBFlowManager for viewing DBFlow databases in the app.'
 
@@ -34,9 +33,10 @@ ext {
     allLicenses = ["Apache-2.0"]
 }
 
-
 android {
     compileSdkVersion 27
+
+
 
     defaultConfig {
         minSdkVersion 15
@@ -55,8 +55,6 @@ android {
         }
     }
 
-    resourcePrefix 'hdbfmanager_'
-
 }
 
 dependencies {
@@ -68,18 +66,12 @@ dependencies {
     api 'com.willowtreeapps.hyperion:hyperion-plugin:0.9.20'
     annotationProcessor "com.google.auto.service:auto-service:1.0-rc4"
 
-    implementation  'com.wajahatkarim3.DBFlowManager:DBFlowManager:3.1.1-v1'
+    //implementation  'com.wajahatkarim3.DBFlowManager:DBFlowManager:3.1.1-v1'
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 
-//apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
-
-//Add these lines to publish library to bintray. This is the readymade scripts made by github user nuuneoi to make uploading to bintray easy.
-//Place it at the end of the file
-//if (project.rootProject.file('local.properties').exists()) {
-    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
-//}
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
