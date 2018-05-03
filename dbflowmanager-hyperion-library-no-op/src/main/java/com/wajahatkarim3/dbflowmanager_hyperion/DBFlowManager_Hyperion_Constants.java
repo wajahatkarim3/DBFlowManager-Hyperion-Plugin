@@ -10,9 +10,10 @@ public class DBFlowManager_Hyperion_Constants {
 
     public static void setDatabaseName(Context context, Class dbClass)
     {
-        SharedPreferences.Editor editor = context.getSharedPreferences(HDBFMANAGER_PREF_NAME, Context.MODE_PRIVATE).edit();
-        editor.putString(HDBFMANAGER_DB_NAME_KEY, dbClass.getName());
-        editor.commit();
+        // No Op
+        //SharedPreferences.Editor editor = context.getSharedPreferences(HDBFMANAGER_PREF_NAME, Context.MODE_PRIVATE).edit();
+        //editor.putString(HDBFMANAGER_DB_NAME_KEY, dbClass.getName());
+        //editor.commit();
     }
 
 }

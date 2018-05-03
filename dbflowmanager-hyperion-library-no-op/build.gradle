@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
+apply plugin: 'kotlin-kapt'
 apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
@@ -11,11 +12,11 @@ ext {
     */
 
     bintrayRepo = "DBFlowManagerHyperionPlugin"
-    bintrayName = "com.wajahatkarim3.DBFlowManagerHyperionPlugin"
+    bintrayName = "com.wajahatkarim3.DBFlowManagerHyperionPlugin-No-Op"
 
     publishedGroupId = 'com.wajahatkarim3.dbflowmanager-hyperion-library'
-    libraryName = 'dbflowmanager-hyperion-no-op'
-    artifact = 'dbflowmanager-hyperion-no-op'
+    libraryName = 'dbflowmanager-hyperion-library-no-op'
+    artifact = 'dbflowmanager-hyperion-library-no-op'
 
     libraryDescription = 'The Hyperion plugin of DBFlowManager for viewing DBFlow databases in the app.'
 
