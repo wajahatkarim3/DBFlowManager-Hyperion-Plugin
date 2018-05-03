@@ -12,8 +12,8 @@ public class DBFlowManagerModule {
     //@Override
     public View createPluginView(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup parent)
     {
-        View view = layoutInflater.inflate(R.layout.hdbfmanager_item_plugin_layout, parent, false);
+        //View view = layoutInflater.inflate(R.layout.hdbfmanager_item_plugin_layout, parent, false);
         // No Op
-        return view;
+        return null;
     }
 }

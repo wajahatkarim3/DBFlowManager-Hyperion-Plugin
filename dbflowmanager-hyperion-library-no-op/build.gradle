@@ -23,7 +23,7 @@ ext {
     siteUrl = 'https://github.com/wajahatkarim3/DBFlowManager-Hyperion-Plugin'
     gitUrl = 'https://github.com/wajahatkarim3/DBFlowManager-Hyperion-Plugin.git'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.4'
 
     developerId = 'wajahatkarim3'
     developerName = 'Wajahat Karim'
@@ -64,8 +64,8 @@ dependencies {
     api 'com.android.support:appcompat-v7:27.1.1'
     api 'com.android.support:design:27.1.1'
 
-    api 'com.willowtreeapps.hyperion:hyperion-plugin:0.9.20'
-    annotationProcessor "com.google.auto.service:auto-service:1.0-rc4"
+    //api 'com.willowtreeapps.hyperion:hyperion-plugin:0.9.20'
+    //annotationProcessor "com.google.auto.service:auto-service:1.0-rc4"
 
     //implementation  'com.wajahatkarim3.DBFlowManager:DBFlowManager:3.1.1-v1'
 
