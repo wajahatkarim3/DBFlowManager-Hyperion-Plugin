@@ -38,6 +38,8 @@ dependencies {
     debugImplementation 'com.willowtreeapps.hyperion:hyperion-core:0.9.20'
     debugImplementation project(":dbflowmanager-hyperion-library")
 
+    releaseImplementation project(":dbflowmanager-hyperion-library-no-op")
+
     releaseImplementation 'com.willowtreeapps.hyperion:hyperion-core-no-op:0.9.20'
 
     testImplementation 'junit:junit:4.12'

@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/DBFlowManager-Hyperion-Plugin.iml" filepath="$PROJECT_DIR$/.idea/DBFlowManager-Hyperion-Plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dbflowmanager-hyperion-library/dbflowmanager-hyperion-library.iml" filepath="$PROJECT_DIR$/dbflowmanager-hyperion-library/dbflowmanager-hyperion-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbflowmanager-hyperion-library-no-op/dbflowmanager-hyperion-library-no-op.iml" filepath="$PROJECT_DIR$/dbflowmanager-hyperion-library-no-op/dbflowmanager-hyperion-library-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbflowmanager-hyperion-release/dbflowmanager-hyperion-release.iml" filepath="$PROJECT_DIR$/dbflowmanager-hyperion-release/dbflowmanager-hyperion-release.iml" />
     </modules>
   </component>
 </project>
