@@ -10,8 +10,12 @@ First, follow the README to set up [DBFlow](https://github.com/Raizlabs/DBFlow).
 
 ```groovy
 dependencies {
+  // DBFlow Manager
   implementation 'com.wajahatkarim3.DBFlowManager:DBFlowManager:3.1.1-v1'
-  debugImplementation 'com.wajahatkarim3.dbflowmanager-hyperion-library:dbflowmanager-hyperion-library:1.0.0'
+  
+  // DBFLow Manager Hyperion Plugin
+  debugImplementation 'com.wajahatkarim3.dbflowmanager-hyperion-library:dbflowmanager-hyperion-library:1.0.4'
+  releaseImplementation 'com.wajahatkarim3.dbflowmanager-hyperion-library:dbflowmanager-hyperion-library-no-op:1.0.4'
 }
 ```
 
@@ -28,7 +32,14 @@ Or add as a new dependency inside your pom.xml
 <dependency>
   <groupId>com.wajahatkarim3.dbflowmanager-hyperion-library</groupId>
   <artifactId>dbflowmanager-hyperion-library</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.4</version>
+  <type>pom</type>
+</dependency>
+
+<dependency>
+  <groupId>com.wajahatkarim3.dbflowmanager-hyperion-library</groupId>
+  <artifactId>dbflowmanager-hyperion-library-no-op</artifactId>
+  <version1.0.4</version>
   <type>pom</type>
 </dependency>
 ```
